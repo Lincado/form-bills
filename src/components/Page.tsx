@@ -52,7 +52,7 @@ export default function FormPage() {
         >
           <div>
             <input
-              className="bg-slate-400 w-64 h-10 rounded-xl placeholder:text-slate-300 p-2 hover:bg-slate-300"
+              className="bg-slate-400 w-64 h-10 rounded-xl placeholder:text-slate-300 p-2 hover:bg-slate-300 hover:placeholder:text-slate-400"
               {...register("name")}
               type="text"
               placeholder="Informe seu nome"
@@ -67,7 +67,7 @@ export default function FormPage() {
             <div className="flex w-8/12 justify-center gap-4" key={field.id}>
               <div className="w-44">
                 <input
-                  className="bg-slate-400 h-10 w-40 rounded-xl placeholder:text-slate-300 p-2"
+                  className="bg-slate-400 h-10 w-40 rounded-xl placeholder:text-slate-300 p-2 hover:bg-slate-300"
                   {...register(`bills.${index}.description`)}
                   type="text"
                 />
@@ -79,7 +79,7 @@ export default function FormPage() {
               </div>
               <div className="w-44">
                 <input
-                  className="bg-slate-400 w-40 h-10 rounded-xl placeholder:text-slate-300 p-2"
+                  className="bg-slate-400 w-40 h-10 rounded-xl placeholder:text-slate-300 p-2 hover:bg-slate-300"
                   {...register(`bills.${index}.amount`)}
                   type="number"
                 />
